@@ -1,0 +1,25 @@
+{
+  "name": "verbo",
+  "version": "0.1.0",
+  "description": "Switch off console.log",
+  "bin": {
+    "verbo": "lib/cli.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "tape test/*.test.js"
+  },
+  "keywords": [
+    "console",
+    "generator-npm-pasta",
+    "log"
+  ],
+  "author": "Rodolfo Wilhelmy",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
