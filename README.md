@@ -1,4 +1,4 @@
-# verbo
+# nulog
 
 Switch off console.log
 
@@ -11,10 +11,10 @@ if (!process.env.TEST || !commandLineArguments.quiet)
   console.log('A message to log in production');
 ```
 
-You can now initialize a `verbo` instance with a toggle variable that will
+You can now initialize a `nulog` instance with a toggle variable that will
 send your logs to /dev/null if false is passed.
 
 ```js
-var logger = require('verbo')(!commandLineArguments.quiet);
+var logger = require('nulog')(!commandLineArguments.quiet);
 logger.log('You will not see this msg when --quiet is true');
 ```

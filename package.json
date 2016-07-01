@@ -1,10 +1,7 @@
 {
-  "name": "verbo",
+  "name": "nulog",
   "version": "1.0.0",
   "description": "Switch off console.log",
-  "bin": {
-    "verbo": "lib/cli.js"
-  },
   "main": "lib/index.js",
   "scripts": {
     "test": "tape test/*.test.js"

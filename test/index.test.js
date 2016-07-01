@@ -1,8 +1,8 @@
 var test = require('tape');
-var verbo = require('../lib/index');
+var nulog = require('../lib/index');
 var Writable = require('stream').Writable;
 
-test('verbo', function (t) {
+test('nulog', function (t) {
   t.plan(1);
 
   var ws = Writable();
@@ -14,12 +14,12 @@ test('verbo', function (t) {
     next();
   };
 
-  var logger = verbo(true, { output: ws });
+  var logger = nulog(true, { output: ws });
   logger.log(msg);
 
-  logger = verbo(true);
+  logger = nulog(true);
   logger.log('you should see this message in the terminal');
 
-  logger = verbo(false);
+  logger = nulog(false);
   logger.log('will not see this message in the terminal');
 });
